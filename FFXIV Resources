@@ -1,0 +1,39 @@
+const embed = new EmbedBuilder()
+  .setTitle("FFXIV Resources")
+  .setDescription("Resources for FFXIV (If/When needed)")
+  .addFields(
+    {
+      name: "Universalis",
+      value: "Marketboard resource. Find the best price for items\n[Link](https://universalis.app/)",
+      inline: false
+    },
+    {
+      name: "Ocean Fishing",
+      value: "[Ocean Fishing tracker.](https://ffxiv.pf-n.co/ocean-fishing) \nFind ocean fishing times, bait, etc.",
+      inline: true
+    },
+    {
+      name: "FFXIV Teamcraft",
+      value: "[Site for Crafters.](https://ffxivteamcraft.com/search)\nUse for easy macros for crafting.",
+      inline: true
+    },
+    {
+      name: "Job guides",
+      value: "[SaltedXIV](https://saltedxiv.com/) \nHas job/rotation guides. Use if you're into that kinda thing",
+      inline: true
+    },
+    {
+      name: "FFXIV Collect",
+      value: "[Collectable site.](https://ffxivcollect.com/) For when you want to catch em all.",
+      inline: true
+    },
+    {
+      name: "List of every MSQ Quest",
+      value: "If you want to know where you're at in the story, but don't want to be spoiled. [Link](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fhnwtswhxzca71.png) **Can give spoilers to length of quests remaining**",
+      inline: false
+    },
+  )
+  .setImage("https://www.gameinformer.com/sites/default/files/styles/full/public/2023/07/28/1e53646e/everything_you_need_to_know_about_final_fantasy_xiv_dawntrail.jpg")
+  .setColor("#00b0f4");
+
+await message.reply({ embeds: [embed] });
